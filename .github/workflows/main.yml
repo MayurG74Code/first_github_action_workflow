@@ -1,0 +1,19 @@
+name: Mayur Gadge
+
+#This is just a label for your workflow.
+#It appears in the Actions tab so you can identify which workflow ran.
+
+on:
+  push:
+    branches: [ main ]
+
+#This means the workflow will run only when you push code to the main branch.
+#If you push to another branch (like dev or feature), this workflow won’t run.
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+#A job is a group of steps that run together.
+#This job is named demo.
+#It runs on the latest Ubuntu virtual machine provided by GitHub.
